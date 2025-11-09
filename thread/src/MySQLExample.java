@@ -1,12 +1,6 @@
 
 import java.sql.*;
 
-/**
- * Contoh sederhana JDBC + MySQL: - Buat database 'contohdb' - Buat tabel
- * 'users' - Masukkan beberapa baris - Query dan tampilkan hasilnya
- *
- * Ganti DB_USER dan DB_PASSWORD sesuai environment Anda.
- */
 public class MySQLExample {
 
     // Ganti sesuai environment
@@ -121,3 +115,4 @@ public class MySQLExample {
         }
     }
 }
+
