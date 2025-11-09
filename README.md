@@ -61,6 +61,7 @@ Sebelum menjalankan program, pastikan untuk menyesuaikan kredensial database di 
 ```java
 private static final String DB_USER = "root";       // Ganti dengan username MySQL Anda
 private static final String DB_PASSWORD = "";      // Ganti dengan password MySQL Anda
+```
 
 🔍 Penjelasan Kode
 
