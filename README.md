@@ -42,6 +42,11 @@ ID Username Email Created At
 
 1 johnDoe john@example.com 2023-10-01 12:00:00 2 janeSmith jane@example.com 2023-10-01 12:01:00 ...
 
+contoh/ss output:
+
+<img width="790" height="462" alt="image" src="https://github.com/user-attachments/assets/2c9ca4da-2c99-431b-b50c-00669f6f0e51" />
+
+
 
 ## Persyaratan
 
