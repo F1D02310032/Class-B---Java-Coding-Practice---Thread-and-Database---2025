@@ -3,7 +3,6 @@ import java.sql.*;
 
 public class MySQLExample {
 
-    // Ganti sesuai environment
     private static final String DB_HOST = "localhost";
     private static final int DB_PORT = 3306;
     private static final String DB_USER = "root";
@@ -11,7 +10,6 @@ public class MySQLExample {
 
     public static void main(String[] args) {
         try {
-            // 0 Muat driver JDBC MySQL
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             String serverUrl = String.format(
@@ -23,14 +21,12 @@ public class MySQLExample {
                     "jdbc:mysql://%s:%d/%s?serverTimezone=UTC&allowPublicKeyRetrieval=true",
                     DB_HOST, DB_PORT, dbName
             );
-
-            // 1) Koneksi ke server MySQL tanpa memilih database
+            
             try (Connection conn = DriverManager.getConnection(serverUrl, DB_USER, DB_PASSWORD); Statement stmt = conn.createStatement()) {
                 String createDbSql = "CREATE DATABASE IF NOT EXISTS " + dbName;
                 stmt.executeUpdate(createDbSql);
             }
 
-            // 2) Koneksi ke database yang baru dibuat
             try (Connection conn = DriverManager.getConnection(dbUrl, DB_USER, DB_PASSWORD)) {
                 conn.setAutoCommit(false);
 
@@ -115,4 +111,5 @@ public class MySQLExample {
         }
     }
 }
+
 
